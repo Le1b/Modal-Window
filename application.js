@@ -38,7 +38,6 @@
                     valid = false;
                     $('#password').add($('#retype')).addClass('error').removeClass('success');
                 }
-
             });
 
             // Повертаємо значення валідності форми.
