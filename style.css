@@ -1,0 +1,342 @@
+body
+{
+    background: url('images/background.png');
+}
+.openModalBtn
+{
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    font-weight: 700;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: inline-block;
+
+    margin-top: -22px;
+    margin-left: -77px;
+    padding: 11px 27px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(bottom, #00646e, #008d96);
+    background:         linear-gradient(to top, #00646e, #008d96);
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, .75), 0 4px 9px #000;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+}
+.modalWindow
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 330px;
+    height: 550px;
+    margin-top: -275px;
+    margin-left: -115px;
+    padding: 10px 30px;
+
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(123, 123, 123, .4)), url('images/modal_bg.png');
+    background:         linear-gradient(to top, rgba(255, 255, 255, 0), rgba(123, 123, 123, .4)), url('images/modal_bg.png');
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04), 0 0 10px rgba(0, 0, 0, .25);
+}
+.modalWindowBottom
+{
+    font-family: 'Myriad pro';
+
+    position: absolute;
+    bottom: -35px;
+    left: -1px;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 330px;
+    padding: 10px 30px;
+
+    text-align: center;
+
+    color: #646464;
+    border: 1px solid #000;
+    border-radius: 0 0 4px 4px;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(123, 123, 123, .4)), url('images/modal_bg.png');
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .22)), url('images/modal_bg.png');
+    background:         linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, .22)), url('images/modal_bg.png');
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04), 0 0 10px rgba(0, 0, 0, .25);
+}
+.modalWindowBottom a
+{
+    color: #c2c2c2;
+}
+.modalCloseBtn
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 900;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    float: right;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 21px;
+    height: 21px;
+    padding-top: 2px;
+
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #2d2d2d;
+    border-radius: 10px 11px 11px 10px/10px 10px 11px 11px;
+    background-color: #8e8e8e;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .75), inset 1px 1px 9px rgba(0, 0, 0, .18), inset 0 0 250px rgba(54, 54, 54, .22);
+}
+.modalWindow h2
+{
+    font-family: 'Myriad pro';
+    font-size: 30px;
+
+    margin: 0;
+
+    text-align: center;
+
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+.labelField
+{
+    font-family: 'Myriad Pro';
+    font-size: 13px;
+
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+.labelField span
+{
+    color: #dd2237;
+}
+.inputFields
+{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    font-style: italic;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    padding: 12px;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(62, 62, 62, .02);
+    box-shadow: 1px 1px rgba(255, 255, 255, .1), inset 1px 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+.signMeUp
+{
+    font-family: 'Myriad Pro';
+    font-size: 22px;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 170px;
+    height: 45px;
+    margin: 0 auto;
+    padding: 9px 30px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(bottom, #629600, #2f6e00);
+    background:         linear-gradient(to top, #629600, #2f6e00);
+    box-shadow: 0 4px 9px #000, inset 0 0 1px rgba(255, 255, 255, .75);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+#modalWindow input:focus {
+    -webkit-transition: all .4s ease .05s;
+            transition: all .4s ease .05s;
+
+    border-right: 10px solid #ff8000;
+}
+.error
+{
+    -webkit-transition: all .5s ease-in .1s;
+            transition: all .5s ease-in .1s;
+
+    box-shadow: 0 0 4px #f66;
+}
+.success
+{
+    -webkit-transition: all .5s ease-in .1s;
+            transition: all .5s ease-in .1s;
+
+    box-shadow: 0 0 4px #6f6;
+}
+/* loader */
+#fadingBarsG
+{
+    position: relative;
+
+    display: none;
+
+    width: 110px;
+    height: 13px;
+}
+.fadingBarsG
+{
+    position: absolute;
+    top: 0;
+
+    width: 13px;
+    height: 13px;
+
+    -webkit-transform: scale(.3);
+    -webkit-transform: scale(.3);
+            transform: scale(.3);
+    -webkit-animation-name: bounce_fadingBarsG;
+    -webkit-animation-name: bounce_fadingBarsG;
+        -ms-animation-name: bounce_fadingBarsG;
+            animation-name: bounce_fadingBarsG;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-duration: 1.3s;
+        -ms-animation-duration: 1.3s;
+            animation-duration: 1.3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: linear;
+    -webkit-animation-direction: linear;
+        -ms-animation-direction: linear;
+            animation-direction: linear;
+
+    background-color: #131313;
+}
+#fadingBarsG_1
+{
+    left: 0;
+
+    -webkit-animation-delay: .52s;
+        -ms-animation-delay: .52s;
+            animation-delay: .52s;
+}
+#fadingBarsG_2
+{
+    left: 14px;
+
+    -webkit-animation-delay: .65s;
+        -ms-animation-delay: .65s;
+            animation-delay: .65s;
+}
+#fadingBarsG_3
+{
+    left: 28px;
+
+    -webkit-animation-delay: .78s;
+        -ms-animation-delay: .78s;
+            animation-delay: .78s;
+}
+#fadingBarsG_4
+{
+    left: 41px;
+
+    -webkit-animation-delay: .91s;
+        -ms-animation-delay: .91s;
+            animation-delay: .91s;
+}
+#fadingBarsG_5
+{
+    left: 55px;
+
+    -webkit-animation-delay: 1.04s;
+        -ms-animation-delay: 1.04s;
+            animation-delay: 1.04s;
+}
+#fadingBarsG_6
+{
+    left: 69px;
+
+    -webkit-animation-delay: 1.17s;
+        -ms-animation-delay: 1.17s;
+            animation-delay: 1.17s;
+}
+#fadingBarsG_7
+{
+    left: 83px;
+
+    -webkit-animation-delay: 1.3s;
+        -ms-animation-delay: 1.3s;
+            animation-delay: 1.3s;
+}
+#fadingBarsG_8
+{
+    left: 96px;
+
+    -webkit-animation-delay: 1.43s;
+        -ms-animation-delay: 1.43s;
+            animation-delay: 1.43s;
+}
+@-webkit-keyframes bounce_fadingBarsG
+{
+    0%
+    {
+        -webkit-transform: scale(1);
+
+        background-color: #131313;
+    }
+    100%
+    {
+        -webkit-transform: scale(.3);
+
+        background-color: #fff;
+    }
+}
+@-ms-keyframes bounce_fadingBarsG
+{
+    0%
+    {
+        -ms-transform: scale(1);
+
+        background-color: #131313;
+    }
+    100%
+    {
+        -ms-transform: scale(.3);
+
+        background-color: #fff;
+    }
+}
+@keyframes bounce_fadingBarsG
+{
+    0%
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+
+        background-color: #131313;
+    }
+    100%
+    {
+        -webkit-transform: scale(.3);
+                transform: scale(.3);
+
+        background-color: #fff;
+    }
+}
+/* end loader */

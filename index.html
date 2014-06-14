@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Myshliaiev Yuriy</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <span class="openModalBtn">
+      Open modal
+   </span>
+   <div class="modalWindow">
+      <div class="modalCloseBtn">x</div>
+      <h2>Sign up</h2>
+      <form id="modalWindow" action="index.html" method="post">
+
+         <label class="labelField" for="name">Name
+            <span>*</span>
+         </label>
+         <br>
+         <input class="inputFields required" id="name" type="text" name="name" placeholder="John Doe">
+         <br>
+
+         <label class="labelField" for="nickname">Nickname
+            <span>*</span>
+         </label>
+         <br>
+         <input class="inputFields required" id="nickname" type="text" name="nickname" placeholder="johndoe">
+         <br>
+
+         <label class="labelField" for="email">Email address</label>
+         <br>
+         <input class="inputFields" id="email" type="email" name="email" placeholder="johndoe@email.com">
+         <br>
+
+         <label class="labelField" for="password">Password
+            <span>*</span>
+         </label>
+         <br>
+         <input class="inputFields required" id="password" type="password" name="password" placeholder="••••••••••••••">
+         <br>
+
+         <label class="labelField" for="password">Retype
+            <span>*</span>
+         </label>
+         <br>
+         <input class="inputFields required" id="retype" type="password" name="retype" placeholder="••••••••••••••">
+
+      </form>
+      <div class="signMeUp">
+         <span>Sign me up!</span>
+         <div id="fadingBarsG">
+            <div id="fadingBarsG_1" class="fadingBarsG">
+            </div>
+            <div id="fadingBarsG_2" class="fadingBarsG">
+            </div>
+            <div id="fadingBarsG_3" class="fadingBarsG">
+            </div>
+            <div id="fadingBarsG_4" class="fadingBarsG">
+            </div>
+            <div id="fadingBarsG_5" class="fadingBarsG">
+            </div>
+            <div id="fadingBarsG_6" class="fadingBarsG">
+            </div>
+            <div id="fadingBarsG_7" class="fadingBarsG">
+            </div>
+            <div id="fadingBarsG_8" class="fadingBarsG">
+            </div>
+         </div>
+      </div>
+      <div class="modalWindowBottom">Already a member? <a href="#">Sign in here</a>
+      </div>
+   </div>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="application.js"></script>
+</body>
+
+</html>
