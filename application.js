@@ -1,5 +1,5 @@
 (function() {
-    app = {
+    var app = {
         // Точка входу програми
         initialize: function() {
             this.setupListeners();
